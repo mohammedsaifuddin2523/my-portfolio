@@ -1,0 +1,63 @@
+<!-- <div class="section" id="projects">
+    <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Projects</div>
+
+        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+        <div class="row">
+
+            <ng-container *ngFor="let project of projects| paginate: config">
+                <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <div class="card">
+                            <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = 'assets/images/gif.gif'" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">{{project.title}}</h4>
+                                <h5 class="card-text"><b>Technology :</b> {{project.tech}} </h5>
+                                <h5 class="card-text"><a href={{project.mediumlink}}>Read Blog on this  Project</a></h5>
+
+                                <a href={{project.livedemo}} class="btn btn-primary stretched-link ml-2 mr-5">Live Demo</a>
+                                <a href={{project.githurl}} class="btn btn-primary stretched-link">GithubLink</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+
+        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+</div> -->
+
+<div class="section" id="projects">
+    <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Projects</div>
+        <div class="colorlib-narrow-content">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="timeline-centered">
+                        <article *ngFor="let proj of project" class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+
+                                <div class="timeline-icon color-2">
+                                    <i class="icon-pen2"></i>
+                                </div>
+
+                                <div class="timeline-label">
+                                    <h2>{{proj.project}}<span>- &nbsp;{{proj.technology}} </span></h2>
+                                    <h4> {{proj.client}}</h4>
+                                    
+                                    <ul>
+                                      <li *ngFor="let description of proj.description | split">{{description}}</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
