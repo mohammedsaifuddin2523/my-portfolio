@@ -181,7 +181,7 @@ export class ProfileService {
     },
 
   ]
-  about2 = `Software Engineer with 1.9+  years of experience .
+  about2 = `Software Engineer with 2  years of experience .
   Worked with Software Development Life Cycle(SDLC) and  agile methodologies .
   Expertise in C# , Angular , MVC , ASP.Net Core,JavaScript . 
   Have good understanding of  Jquery, Bootstrap , and MSSQL.`
